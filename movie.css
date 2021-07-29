@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --first-color:#22254b;
+    --second-color:#373b69;
+}
+body{
+    background-color: #22254b;
+    margin: 0;
+}
+header{
+    padding: 5px;
+    display: flex;
+    justify-content:flex-end;
+    background-color:#373b69;
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+}
+#search{
+    background-color: transparent;
+    border: 2px solid #22254b;
+    padding: 15px 15px;
+    border-radius: 50px;
+    font-size:15px ;
+    color: white;
+    /* border: 1px solid red; */
+    margin-left: -70%;
+}
+.container{
+    /* border: 1px solid red; */
+    margin-right: 3%;
+    clear: right;
+}
+button{
+   padding: 15px;
+   border-radius: 50px;
+   background-color: transparent;
+   border: 2px solid #22254b;
+   width: 50%;
+   color: white;
+   font-size: 18px;
+
+}
+header h3{
+    /* border: 1px solid red; */
+    width: 20%;
+    margin: auto;
+    margin-right: 20%;
+    font-size: 40px;
+    text-align: center;
+    color: #f7f8fc ;
+}
+#search:focus{
+    outline:0;
+background-color:#22254b;
+}
+#search::placeholder{
+    color:#737bc5 ;
+}
+
+.contain{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: auto;
+
+}
+.movie{
+    /* border: 1px solid red; */
+    width: 100%;
+    /* display: flex; */
+}
+.movie img{
+    width: 50%;
+    height: 450px;
+    object-fit:cover;
+}
+.movie-info{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#eee;
+}
+.movie-info h2{
+    margin-top: 4%;
+    font-size: 30px;
+    background-color: #373b69;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    width: 30%;
+   padding: 5px;
+   text-align: center;
+
+}
+.movie-info span{
+    background-color: #373b69;
+    padding: 7px 7px;
+    border-radius: 50px;
+    font-size: 25px;
+    margin-right: 10px;
+    text-align: center;
+}
+.movie-info span.green{
+    color: lightgreen;
+}
+.movie-info span.orange{
+    color: orange;
+}
+.movie-info span.red{
+    color: red;
+}
+.movie-info span#reco{
+    color: yellow;
+}
+.overview{
+    width: 45%;
+    border: 1px solid #22254b ;
+    background-color: #373b69;
+    padding: 10px;
+    height: 450px;
+    display: none;
+    float: right;
+    margin-top: -73%;
+    border-radius:5px ;
+}
+.overview p{
+    color: white;
+    font-size: 18px;
+}
+.overview h3{
+    color: white;
+    text-decoration:underline;
+    font-size: 25px;
+}
+.movie:hover .overview{
+    display: block;
+}
+.overview #dir{
+    font-size: 18px;
+    text-decoration: underline;
+
+}
+.overview #act{
+    font-size: 18px;
+    text-decoration: underline;
+
+}
+#gif{
+    width: 100%;
+}
+#home{
+    border: 1px solid #22254b;
+    margin-left: 25%;
+    background-color: #373b69;
+    color: #737bc5;
+    font-size: 40px;
+}
